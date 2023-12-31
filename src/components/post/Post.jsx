@@ -3,13 +3,12 @@ import "./post.css";
 import { Users } from "../../dummyData";
 
 export default function Post({post}) {
-  const user = Users.filter(u=>u.id===1)
-  console.log(user)
-  const [like, setLike] = useState(post.like)
-  const [isliked, setIsLiked] = useState(false)
+  const [like, setLike] = useState(post.like);
+  const [isLiked, setIsLiked] = useState(false);
   const handlelike = ()=>{
-    setLike(isliked ? like-1 : like+1)
-    setIsLiked(!isliked)
+    console.log(like)
+    setLike(isLiked ? like-1 : like+1)
+    setIsLiked(!isLiked)
   }
 
   return (
@@ -38,9 +37,9 @@ export default function Post({post}) {
           </div>
           <div className="postBottom">
             <div className="postBottomLeft">
-              <img src="\images\like.png" alt="like" onClick={handlelike} className="likeImg" />
-              <img src="\images\heart.png" alt="heart" onClick={handlelike} className="likeImg" />
-              <span className="liketext">{like} people like it</span>
+              <img src="\images\like.png" onClick={handlelike} alt="like" className="likeImg" />
+              <img src="\images\heart.png" onClick={handlelike} alt="heart" className="likeImg" />
+              <span className="liketext">{like} people like it!</span>
             </div>
             <div className="postBottomRight">
               <span className="postComments">{post.comment} comments</span>

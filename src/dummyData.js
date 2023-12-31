@@ -2,12 +2,12 @@ export const Users =[
 {
    id:1,
    profilePicture:"/images/men1.png",
-   username: "johen jon"
+   username: "Johen Jon"
 },
 {
    id:2,
    profilePicture:"/images/men2.jpg",
-   username: "Shahzad shkil"
+   username: "Shahzad Shakil"
 },
 {
    id:3,
@@ -17,7 +17,7 @@ export const Users =[
 {
    id:4,
    profilePicture:"/images/men4.jpg",
-   username: "Khurram jan"
+   username: "Khurram Shan"
 },
 {
    id:5,
@@ -58,6 +58,8 @@ export const Posts = [
         time: "5 mins ago",
         userId: 1,
         comment: 9,
+        like: 32
+
     },
     {
         id:2,
@@ -66,6 +68,7 @@ export const Posts = [
         time: "67 mins ago",
         userId: 2,
         comment: 5,
+        like: 32
     },
     {
         id:3,
@@ -74,6 +77,7 @@ export const Posts = [
         time: "32 mins ago",
         userId: 3,
         comment: 23,
+        like: 32
     },
     {
         id:4,
@@ -82,6 +86,7 @@ export const Posts = [
         time: "51 mins ago",
         userId: 4,
         comment: 19,
+        like: 32
     },
     {
         id:5,
@@ -90,6 +95,7 @@ export const Posts = [
         time: "50 mins ago",
         userId: 5,
         comment: 91,
+        like: 32
     },
     {
         id:6,
@@ -98,6 +104,7 @@ export const Posts = [
         time: "10 mins ago",
         userId: 6,
         comment: 11,
+        like: 32
     },
 ]
 

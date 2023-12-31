@@ -1,0 +1,89 @@
+.ligin {
+    background-color: white;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.loginWarpper {
+    width: 70%;
+    height: 70%;
+    display: flex;
+}
+
+.loginLeft,
+.loginRight {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.loginLogo {
+    font-size: 3em;
+    font-weight: 800;
+    color: rgb(12, 148, 148);
+    margin-bottom: 12px;
+}
+
+.logintext {
+    font-weight: 600;
+    font-size: 1.2em;
+    color: #555;
+}
+
+.loginTitle {
+    text-align: center;
+    color: rgb(12, 148, 148);
+    font-size: 2em;
+}
+
+.loginBox {
+    height: 300vh;
+    background-color: rgb(235, 238, 240);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border-radius: 10px;
+    -webkit-box-shadow: 1px 0px 15px 2px rgba(0, 0, 0, 0.18);
+    box-shadow: 1px 0px 15px 2px rgba(0, 0, 0, 0.18);
+}
+
+input {
+    border: 2px solid rgb(69, 69, 69);
+    border-radius: 6px;
+    outline-style: none;
+    margin: 12px;
+    padding: 6px;
+    font-size: 1.2em;
+}
+
+.loginBox button {
+    border-radius: 6px;
+    margin: 12px;
+    padding: 6px;
+    background-color: rgb(12, 148, 148);
+    color: white;
+    font-weight: 600;
+    font-size: 1.2em;
+    border: none;
+    cursor: pointer;
+}
+
+.loginBox button:hover {
+    background-color: rgb(15, 177, 177);
+}
+
+button.newAccount {
+    background-color: rgb(25, 210, 25);
+}
+
+.forgotpass {
+    margin: 12px;
+    color: #3650e4;
+    text-align: center;
+    cursor: pointer;
+}
