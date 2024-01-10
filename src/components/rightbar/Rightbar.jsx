@@ -10,7 +10,7 @@ export default function Rightbar({ user }) {
   console.log(user);
   const [friends, setFriends] = useState([]);
   const [followed, setFollowed] = useState(false);
-  const { user: currentUser, dispatch} = useContext(AuthContext);
+  const { user: currentUser, dispatch } = useContext(AuthContext);
 
   useEffect(() => {
     setFollowed(currentUser.followings.includes(user?._id));
@@ -32,16 +32,22 @@ export default function Rightbar({ user }) {
   const FollowHendler = async (e) => {
     // e.preventDefault();
     try {
-      if(followed){
-        await axios.put("http://localhost:8800/api/users/"+ user._id + "/unfollow", {userId:currentUser._id},);
-        dispatch({type: "UNFOLLOW", payload: user._id })
-      }else{
-        await axios.put("http://localhost:8800/api/users/"+ user._id + "/follow", {userId:currentUser._id},);
-        dispatch({type: "FOLLOW", payload: user._id })
+      if (followed) {
+        await axios.put(
+          "http://localhost:8800/api/users/" + user._id + "/unfollow",
+          { userId: currentUser._id }
+        );
+        dispatch({ type: "UNFOLLOW", payload: user._id });
+      } else {
+        await axios.put(
+          "http://localhost:8800/api/users/" + user._id + "/follow",
+          { userId: currentUser._id }
+        );
+        dispatch({ type: "FOLLOW", payload: user._id });
       }
     } catch (error) {
       console.log(error);
-    };
+    }
     setFollowed(!followed);
   };
   const HomeRightbar = () => {
@@ -84,8 +90,11 @@ export default function Rightbar({ user }) {
         {user.username !== currentUser.username && (
           <button className="rightbarFollowBtn" onClick={FollowHendler}>
             {followed ? "UnFollow " : "Follow "}
-            {followed ? <i className="fa-solid fa-minus"></i> : <i className="fa-solid fa-plus"></i>}
-            
+            {followed ? (
+              <i className="fa-solid fa-minus"></i>
+            ) : (
+              <i className="fa-solid fa-plus"></i>
+            )}
           </button>
         )}
         <h3 className="rightbarTilte">User Information</h3>
@@ -127,7 +136,7 @@ export default function Rightbar({ user }) {
         <div className="rightbarFollwings">
           {friends.map((friend) => (
             <Link
-            key={friend._id}
+              key={friend._id}
               to={"/profile/" + friend.username}
               style={{ textDecoration: "none", color: "black" }}
             >
