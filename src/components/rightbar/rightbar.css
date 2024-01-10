@@ -118,3 +118,16 @@ background-color: #cbc9c9;
     margin: 9px 0;
     text-align: center;
 }
+.rightbarFollowBtn{
+cursor: pointer;
+padding: 6px 22px;
+border-radius: 6px;
+outline-style: none;
+background-color: rgb(12, 148, 148);
+color: white;
+border: none;
+margin: 22px 6px;
+}
+.rightbarFollowBtn:hover{
+    background-color:rgb(3, 112, 112) ;
+}

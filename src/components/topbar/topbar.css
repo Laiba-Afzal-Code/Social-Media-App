@@ -21,6 +21,11 @@
    cursor: pointer;
    margin: 2px;
 }
+.logo{
+    font-size: 2.5em;
+    text-decoration: none;
+    color: white;
+}
 .topbarcenter{
     flex: 4;
     background-color: white;
@@ -44,6 +49,7 @@
 .topbarinput{
     border: none;
     width: 80%;
+    height: 100%;
     font-size: 1em;
     outline: none;
 }
@@ -56,20 +62,27 @@
 .topimg{
     width: 50px;
     height: 50px;
-    border: 1px solid white;
+    border: 2px solid white;
     border-radius: 50px;
     object-fit: cover;
     cursor: pointer;
 }
 .toplink{
-    font-size: 1em;
+    font-size: 1.2em;
     color: white;
-    padding: 9px;
-    justify-content: space-evenly;
+    padding: 5px;
     cursor: pointer;
+    font-weight: bold;
+    text-decoration: none;
+}
+.topimg:active{
+    border: 2px solid rgb(22, 21, 21);
+}
+ span {
+    text-decoration: none;
 }
 .toplink:hover{
-    color: black;
+    color: rgb(68, 225, 225);
 }
 .topbaricons{
     display: flex;
@@ -80,6 +93,9 @@
     cursor: pointer;
     position: relative;
     font-size: 1.5em;
+}
+.topbariconitem i:hover{
+    color: rgb(68, 225, 225);
 }
 .topbariconBadge{
     width: 15px;
@@ -95,4 +111,6 @@
     font-size: 12px;
 
 }
-
+.active{
+    color: rgb(68, 225, 225);
+}

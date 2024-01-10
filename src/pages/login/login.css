@@ -22,8 +22,8 @@
 }
 
 .loginLogo {
-    font-size: 3em;
-    font-weight: 800;
+    font-size: 4em;
+    font-weight: bold;
     color: rgb(12, 148, 148);
     margin-bottom: 12px;
 }
@@ -71,6 +71,9 @@ input {
     font-size: 1.2em;
     border: none;
     cursor: pointer;
+}
+.loginBox button:disabled{
+    cursor: not-allowed;
 }
 
 .loginBox button:hover {
