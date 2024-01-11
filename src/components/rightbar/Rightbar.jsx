@@ -28,7 +28,7 @@ export default function Rightbar({ user }) {
       }
     };
     getFriends();
-  }, [user]);
+  }, [user._id]);
   const FollowHendler = async (e) => {
     // e.preventDefault();
     try {
